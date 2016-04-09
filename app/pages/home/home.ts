@@ -1,8 +1,8 @@
 import {Page} from 'ionic-angular';
 import {FirebaseService} from '../../lib/firebaseService'
 import {
-  OnInit,
-  OnDestroy
+    OnInit,
+    OnDestroy
 } from 'angular2/core';
 
 @Page({
@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
 
     ngOnInit() {
         console.log('ngOnInit');
-        
+
         this.FBService.login("c@mail.com")
             .subscribe((data: FirebaseAuthData) => {
 
