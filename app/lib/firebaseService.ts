@@ -20,6 +20,10 @@ export class FirebaseService {
         })
     }
 
+    logout() {
+        this.baseRef.unauth()
+    }
+
     login(_username) {
         var that = this
 

@@ -5,10 +5,12 @@ import {
     OnDestroy
 } from 'angular2/core';
 
+
+
 @Page({
     templateUrl: 'build/pages/home/home.html'
 })
-export class HomePage implements OnInit {
+export class HomePage implements OnInit, OnDestroy {
     auth: any = {};
     items = [];
     activeUser: String
@@ -17,12 +19,20 @@ export class HomePage implements OnInit {
         console.log("in constructor");
 
     }
+    
+    doLogout() {
+        this.FBService.logOut()
+    }
+
+    ngOnDestroy() {
+        console.log('ngOnDestroy');
+    }
 
     ngOnInit() {
         console.log('ngOnInit');
 
         this.FBService.login("c@mail.com")
-            .subscribe((data: FirebaseAuthData) => {
+            .subscribe((data: any) => {
 
                 console.log("the data", data.password.email)
                 this.activeUser = data.password.email

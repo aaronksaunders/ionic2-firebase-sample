@@ -6,6 +6,7 @@
 
 <ion-content class="home">
     <h3 padding>Active User: {{activeUser}}</h3>
+    <button (click)="doLogout()">Logout</button>
     <ion-card *ngFor="#item of items">
         <ion-card-header>
             {{item.data.volumeInfo.title}}
