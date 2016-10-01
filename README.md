@@ -1,4 +1,9 @@
 # ionic2-firebase-sample
+---
+
+See https://github.com/aaronksaunders/ionic2rc0-firebase the application at that location is using Ionic2 RC0 and will be updated to support the same features as this repo. I will no longer update this repo
+
+---
 
 See the angularFire sample for more information on the data structure and the security rules
 
