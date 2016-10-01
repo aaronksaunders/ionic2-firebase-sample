@@ -1,6 +1,6 @@
 # ionic2-firebase-sample
----
 
+####Updated October 1st 2016 
 See https://github.com/aaronksaunders/ionic2rc0-firebase the application at that location is using Ionic2 RC0 and will be updated to support the same features as this repo. I will no longer update this repo
 
 ---
